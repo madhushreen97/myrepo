@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+:root {
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    color: var(--Dark-blue);
+    font-size: 32px;
+    font-weight: 700;
+}
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale-blue);
+    font-family:"Red Hat Display", sans-serif;
+    font-size: 15px;
+}
+   
+    
+.card {
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: var(--Desaturated-blue);
+    margin: 50px auto;
+}
+.img {
+    width: 100%;
+}
+.plan-container {
+    font-size:16px;
+    background-color: var(--Very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.plan-container a {
+    color: var(--Bright-blue);
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.plan-description strong {
+    color: var(--Dark-blue);
+}
+.plan-description {
+    line-height: 20px;
+    margin-right: 75px;
+}
+.container {
+background-color: white;
+padding: 30px;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-size: 18px;
+}
+.container>* {
+    margin: 13px 0;
+}
+.description {
+    line-height: 25px;
+}
+button
+{
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+.proceed-button {
+    background-color: var(--Bright-blue);
+    color:white;
+    padding: 1rem 0;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+.proceed-button :hover {
+    opacity: 0.8;
+}
+.cancle-button {
+    background-color: white;
+    color: var(--Desaturated-blue);
+    margin-top: 22px;
+    
+}
+.cancle-button:hover {
+    color: black;
+    opacity: 0.8;
+}
